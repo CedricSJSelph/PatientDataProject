@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Patient {
 
-    private Integer id;
+    private String id;
     private String name;
     private Date doB;
     private Boolean sex;
@@ -17,7 +17,7 @@ public class Patient {
 
     public Patient(){}
 
-    public Patient(Integer id, String name, Date doB, Boolean sex, String altName, String race,
+    public Patient(String id, String name, Date doB, Boolean sex, String altName, String race,
                    String address, String phoneNumber, String language, String ethnicGroup){
         this.id = id;
         this.name = name;
@@ -31,11 +31,11 @@ public class Patient {
         this.ethnicGroup = ethnicGroup;
     }
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
