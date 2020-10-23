@@ -1,12 +1,13 @@
 package com.patientData;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Patient {
 
     private String id;
     private String name;
-    private Date doB;
+    private LocalDate doB;
     private Boolean sex;
     private String altName;
     private String race;
@@ -19,7 +20,7 @@ public class Patient {
         this(null,null,null,null,null,null,null,null,null,null);
     }
 
-    public Patient(String id, String name, Date doB, Boolean sex, String altName, String race,
+    public Patient(String id, String name, LocalDate doB, Boolean sex, String altName, String race,
                    String address, Long phoneNumber, String language, String ethnicGroup){
         this.id = id;
         this.name = name;
@@ -49,11 +50,11 @@ public class Patient {
         this.name = name;
     }
 
-    public Date getDoB() {
+    public LocalDate getDoB() {
         return doB;
     }
 
-    public void setDoB(Date doB) {
+    public void setDoB(LocalDate doB) {
         this.doB = doB;
     }
 
