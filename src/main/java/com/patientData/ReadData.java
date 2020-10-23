@@ -50,24 +50,65 @@ public class ReadData {
 					}
 					newPatient.setRace(data[10]);
 
-//					// Alt Name formatting
-//					if (data[9].equals("1") || data[9].equals("")) {
-//						data[9] = "N/A";
-//					}
-//					else {
-//						String[] altNameFieldArray = data[9].split("\\^");
-//						data[9] = altNameFieldArray[1] + " " + nameFieldArray[0];
-//						newPatient.setName(data[9]);
-//					}
-//
-//
-//					System.out.println("id: " + newPatient.getId() + "\tName: " + newPatient.getName() + "\tSex: " + newPatient.getSex() + "\tRace: " + newPatient.getRace() + "\tAlt Name: " + newPatient.getAltName());
-//					System.out.println();
-//					newPatient.setAltName(data[2]);
-//					newPatient.setRace(data[2]);
-//					newPatient.setAddress(data[2]);
-//					newPatient.setPhoneNumber(data[2]);
-//					newPatient.setLanguage(data[2]);
+					// Alt Name formatting
+					if (data[9].equals("1") || data[9].equals("")) {
+						data[9] = "N/A";
+					}
+					else {
+						String[] altNameFieldArray = data[9].split("\\^");
+						data[9] = altNameFieldArray[1] + " " + nameFieldArray[0];
+					}
+					newPatient.setAltName(data[9]);
+
+					// address formatting
+					String[] addressFieldArray = data[11].split("\\^");
+					data[11] = addressFieldArray[0] + ", " + addressFieldArray[2] + ", " + addressFieldArray[3];
+							//+ " " + addressFieldArray[4].substring(0,4);
+					newPatient.setAddress(data[11]);
+
+					// phone number formatting
+					String[] phoneNumberFieldArray = data[13].split("\\^");
+					Long phoneNumber = null;
+					if(phoneNumberFieldArray[0].equals("")){
+						String phoneNumberStr = phoneNumberFieldArray[5] + phoneNumberFieldArray[6];
+						phoneNumber = Long.parseLong(phoneNumberStr);
+					}
+					else if(phoneNumberFieldArray[0].contains("(")){
+						String areaCodeStr = phoneNumberFieldArray[0].substring(1,4);
+						String middleOfNumberStr = phoneNumberFieldArray[0].substring(5,8);
+						String endOfNumberStr = phoneNumberFieldArray[0].substring(9,13);
+						String fullNumberStr = areaCodeStr + middleOfNumberStr + endOfNumberStr;
+						phoneNumber = Long.parseLong(fullNumberStr);
+					}
+					else{
+						phoneNumber = Long.parseLong(data[13]);
+					}
+					newPatient.setPhoneNumber(phoneNumber);
+
+					// Language formatting
+					String[] languageFieldArray = data[15].split("\\^");
+					if(languageFieldArray[0].equals("1") || languageFieldArray[0].equals("")){
+						data[15] = "N/A";
+					}
+					else{
+						data[15] = languageFieldArray[1];
+					}
+					newPatient.setLanguage(data[15]);
+
+					//Ethic Group formatting
+					newPatient.setEthnicGroup(data[22]);
+
+
+
+
+
+					System.out.println("id: " + newPatient.getId() + "\tName: " + newPatient.getName() + "\tSex: "
+							+ newPatient.getSex() + "\tRace: " + newPatient.getRace() + "\tAlt Name: "
+							+ newPatient.getAltName() + "\tAddress: " + newPatient.getAddress() + "\tPhone Number: "
+							+ newPatient.getPhoneNumber() + "\tLanguage: " + newPatient.getLanguage() + "\tEthnic Group: "
+							+ newPatient.getEthnicGroup());
+					System.out.println();
+
 //					newPatient.setEthnicGroup(data[2]);
 
 

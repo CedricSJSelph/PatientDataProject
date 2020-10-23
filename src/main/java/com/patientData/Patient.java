@@ -11,14 +11,14 @@ public class Patient {
     private String altName;
     private String race;
     private String address;
-    private String phoneNumber;
+    private Long phoneNumber;
     private String language;
     private String ethnicGroup;
 
     public Patient(){}
 
     public Patient(String id, String name, Date doB, Boolean sex, String altName, String race,
-                   String address, String phoneNumber, String language, String ethnicGroup){
+                   String address, Long phoneNumber, String language, String ethnicGroup){
         this.id = id;
         this.name = name;
         this.doB = doB;
@@ -87,11 +87,11 @@ public class Patient {
         this.address = address;
     }
 
-    public String getPhoneNumber() {
+    public Long getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
+    public void setPhoneNumber(Long phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
