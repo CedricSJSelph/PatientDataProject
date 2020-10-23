@@ -15,7 +15,9 @@ public class Patient {
     private String language;
     private String ethnicGroup;
 
-    public Patient(){}
+    public Patient(){
+        this(null,null,null,null,null,null,null,null,null,null);
+    }
 
     public Patient(String id, String name, Date doB, Boolean sex, String altName, String race,
                    String address, String phoneNumber, String language, String ethnicGroup){
@@ -109,5 +111,12 @@ public class Patient {
 
     public void setEthnicGroup(String ethnicGroup) {
         this.ethnicGroup = ethnicGroup;
+    }
+
+    @Override
+    public String toString(){
+        StringBuilder str = new StringBuilder();
+        str.append(this.id).append(this.doB).append(this.name).append(this.altName).append(this.sex).append(this.race).append(this.address).append(this.phoneNumber).append(this.language).append(this.ethnicGroup);
+        return str.toString();
     }
 }
