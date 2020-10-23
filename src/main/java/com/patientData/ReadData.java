@@ -146,8 +146,8 @@ public class ReadData{
 		File file = new File(fileLocation);
 		PrintWriter output = new PrintWriter(file);
 
-		output.print("   | Patient ID |    DOB     |       Name       | Alt. Name  |     Sex    |    Race    |   Home Address   |Phone Number|Prim. Lang. |Ethnic Group|\n");
-		System.out.print("   | Patient ID |    DOB     |       Name       | Alt. Name  |     Sex    |    Race    |   Home Address   |Phone Number|Prim. Lang. |Ethnic Group|\n");
+		output.print("   | Patient ID |    DOB     |       Name       |  Alt. Name   |     Sex    |    Race    |               Home Address              |Phone Number|Prim. Lang. |Ethnic Group|\n");
+		System.out.print("   | Patient ID |    DOB     |       Name       |  Alt. Name   |     Sex    |    Race    |               Home Address              |Phone Number|Prim. Lang. |Ethnic Group|\n");
 
 		for(Patient in:information){
 			System.out.printf("%03d", count);
