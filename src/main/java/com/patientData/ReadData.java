@@ -13,6 +13,8 @@ public class ReadData{
 
 		try {
 			Scanner input = new Scanner(new File("src/main/java/messages.txt"));
+			ArrayList<Patient> Patients = new ArrayList<Patient>();
+
 			while(input.hasNext()) {
 				String line = input.nextLine();
 
@@ -86,8 +88,10 @@ public class ReadData{
 //					System.out.println("break");
 //					System.out.println("name index: " + data[5]);
 //					System.out.println("end");
+					Patients.add(newPatient);
 				}
 			}
+			writeFile(Patients,"src\\main\\java\\PatientInformation");
 		}
 		catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -95,20 +99,30 @@ public class ReadData{
 	}
 
 	//ArrayList of PatientObjects
-	public static void writeFile(ArrayList<Patient> information) throws FileNotFoundException {
+	public static void writeFile(ArrayList<Patient> information, String fileLocation) throws FileNotFoundException {
 		int count = 0;
 
-		File file = new File("src\\main\\java\\PatientInformation");
+		File file = new File(fileLocation);
 		PrintWriter output = new PrintWriter(file);
 
-		output.print("    | Patient ID |   DOB   |   Name   |   Alt. Name   |   Sex   |   Race   |   Home Address   | Phone Number |Primary Language| Ethnic Group |\n");
+		output.print("   | Patient ID |    DOB     |       Name       | Alt. Name  |     Sex    |    Race    |   Home Address   |Phone Number|Prim. Lang. |Ethnic Group|\n");
+		System.out.print("   | Patient ID |    DOB     |       Name       | Alt. Name  |     Sex    |    Race    |   Home Address   |Phone Number|Prim. Lang. |Ethnic Group|\n");
 
 		for(Patient in:information){
-			System.out.printf("%03d%n", count++);
+			System.out.printf("%03d", count);
 			System.out.print("|");
 			System.out.print(in.toString());
 			System.out.println();
+
+			output.printf("%03d", count);
+			output.print("|");
+			output.print(in.toString());
+			output.println();
+
+			count += 1;
 		}
+		output.close();
+
 	}
 
 

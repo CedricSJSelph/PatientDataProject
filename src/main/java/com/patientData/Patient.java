@@ -116,7 +116,68 @@ public class Patient {
     @Override
     public String toString(){
         StringBuilder str = new StringBuilder();
-        str.append(this.id).append(this.doB).append(this.name).append(this.altName).append(this.sex).append(this.race).append(this.address).append(this.phoneNumber).append(this.language).append(this.ethnicGroup);
+//            str
+//                    .append(this.id + "|")
+//                    .append(this.doB + " |")
+//                    .append(this.name + " |")
+//                    .append(this.altName + " |")
+//                    .append(this.sex + " |")
+//                    .append(this.race + " |")
+//                    .append(this.address + " |")
+//                    .append(this.phoneNumber + " |")
+//                    .append(this.language + " |")
+//                    .append(this.ethnicGroup + " |");
+
+        //ID format
+        str.append(this.getId());
+        for(int i = 0; i < (12 - this.id.length()); i++){
+            str.append(" ");
+        }
+        str.append("|");
+
+        //Dob format
+        str.append(this.getDoB());
+        for(int i = 0; i < (8 - 0/*this.getDoB().toString().length()*/); i++){
+            str.append(" ");
+        }
+        str.append("|");
+
+        //Name format
+        str.append(this.getName());
+        for(int i = 0; i < (18 - this.name.length()); i++){
+            str.append(" ");
+        }
+        str.append("|");
+
+        //Name format
+        str.append(this.getAltName());
+        for(int i = 0; i < (8 -0 /*this.altName.length()*/); i++){
+            str.append(" ");
+        }
+        str.append("|");
+
+        if(this.sex){
+            str.append("      M     ");
+            str.append("|");
+        }else{
+            str.append("      F     ");
+            str.append("|");
+        }
+
+        //Race format
+        str.append(this.getRace());
+        for(int i = 0; i < (12 - this.getRace().length()); i++){
+            str.append(" ");
+        }
+        str.append("|");
+
+        //Address format
+        str.append(this.getAddress());
+        for(int i = 0; i < (14 - 0/*this.getAddress().length()*/); i++){
+            str.append(" ");
+        }
+        str.append("|");
+
         return str.toString();
     }
 }
