@@ -1,45 +1,51 @@
-   | Patient ID |    DOB     |       Name       |  Alt. Name   |     Sex    |    Race    |               Home Address              |Phone Number|Prim. Lang. |Ethnic Group|
-000|E46749      |null        |JOHN DOE          |JOHN DOE      |      M     |WHITE       |115 MAINSTREET, GOODTOWN, KY             |2706009800  |ENGLISH     |2186-5^NOT HISPANIC OR LATINO^HL70012|
-001|E46700      |null        |JOHN WAYNE        |JOHN WAYNE    |      M     |WHITE       |3160 AIRWAY AVE, COSTA MESA, CA          |2706009800  |ENGLISH     |2186-5^NOT HISPANIC OR LATINO^HL70012|
-002|10006579    |null        |GREGORY PECK      |N/A           |      M     |N/A         |100 LANCASTER AVE, WYNEWOOD, PA          |8885551212  |N/A         |            |
-003|10006579    |null        |PENELOPE CRUZ     |N/A           |      F     |N/A         |350 S BEVERLY DR, HOLLYWOOD, CA          |8885551212  |N/A         |            |
-004|10006579    |null        |MARK WAHLBERG     |N/A           |      M     |N/A         |9601 WILSHIRE BLVD, BEVERLY HILLS, CA    |8885551212  |N/A         |            |
-005|10006579    |null        |JOHNNY CARSON     |N/A           |      M     |N/A         |6962 WILDLIFE RD, MALIBU, CA             |8885551212  |N/A         |            |
-006|10006579    |null        |JACK NICHOLSON    |N/A           |      M     |N/A         |12850 MULHOLLAND DR, BEVERLY HILLS, CA   |8885551212  |N/A         |            |
-007|10006579    |null        |SCARLET JOHANSSON |N/A           |      F     |N/A         |1234, , NEW YORK                         |8885551212  |N/A         |            |
-008|10006579    |null        |CHRISTIAN BALE    |N/A           |      M     |N/A         |3456 WILSHIRE BLVD, BEVERLY HILLS, CA    |8885551212  |N/A         |            |
-009|E46749      |null        |GENE HACKMAN      |JOHN HACKMAN  |      M     |WHITE       |1424 OLD SUNSET TRAIL, SANTA FE, NM      |2706009800  |ENGLISH     |2186-5^NOT HISPANIC OR LATINO^HL70012|
-010|E46700      |null        |LAWRENCE OLIVIER  |JOHN OLIVIER  |      M     |WHITE       |115 MAINSTREET, GOODTOWN, KY             |2706009800  |ENGLISH     |2186-5^NOT HISPANIC OR LATINO^HL70012|
-011|10006579    |null        |MATT DAMON        |N/A           |      M     |N/A         |916 W BURBANK BLVD, BURBANK, CA          |8885551212  |N/A         |            |
-012|10006579    |null        |WILL FERRELL      |N/A           |      M     |N/A         |370 LEXINGTON AVE, NEW YORK, NY          |8885551212  |N/A         |            |
-013|10006579    |null        |NICHOLAS CAGE     |N/A           |      M     |N/A         |715 SAN VICENTE BLVD, WEST HOLLYWOOD, CA |8885551212  |N/A         |            |
-014|10006579    |null        |UMA THURMAN       |N/A           |      F     |N/A         |150 5TH AVE, NEW YORK, NY                |8885551212  |N/A         |            |
-015|10006579    |null        |ERICH BERGEN      |N/A           |      M     |N/A         |655 PENN AVE, PITTSBURGH, PA             |8885551212  |N/A         |            |
-016|10006579    |null        |CUBA GOODING      |N/A           |      M     |N/A         |2186 CLARK ST, DETROIT, MI               |8885551212  |N/A         |            |
-017|10006579    |null        |KEVIN COSTNER     |N/A           |      M     |N/A         |999 OCEAN PARK BLVD, SANTA MONICA, CA    |8885551212  |N/A         |            |
-018|E46749      |null        |JAMES DEAN        |JOHN DEAN     |      M     |WHITE       |115 MAINSTREET, GOODTOWN, KY             |2706009800  |ENGLISH     |2186-5^NOT HISPANIC OR LATINO^HL70012|
-019|E46700      |null        |GOLDIE HAWN       |JOHN HAWN     |      F     |WHITE       |350 S BEVERLY DR, BEVERLY HILLS, CA      |2706009800  |ENGLISH     |2186-5^NOT HISPANIC OR LATINO^HL70012|
-020|10006579    |null        |RIP TORN          |N/A           |      M     |N/A         |PO BOX 1392, LAKEVILLE, CT               |8885551212  |N/A         |            |
-021|10006579    |null        |FARRAH FAWCETT    |N/A           |      F     |N/A         |926 ROSEDALE DR, CORPUS CHRISTI, TX      |8885551212  |N/A         |            |
-022|10006579    |null        |GROUCHO MARX      |N/A           |      M     |N/A         |376 E 10TH ST, NEW YORK, NY              |8885551212  |N/A         |            |
-023|10006579    |null        |MERYL STREEP      |N/A           |      F     |N/A         |2000 AVENUE OF THE STARS, LOS ANGELES, CA|8885551212  |N/A         |            |
-024|10006579    |null        |ORLANDO BLOOM     |N/A           |      M     |N/A         |9150 WILSHIRE BLVD, BEVERLY HILLS, CA    |8885551212  |N/A         |            |
-025|10006579    |null        |STEVE MCQUEEN     |N/A           |      M     |N/A         |232 MAIN ST, SLATER, MO                  |8885551212  |N/A         |            |
-026|10006579    |null        |DUSTIN HOFFMAN    |N/A           |      M     |N/A         |11661 SAN VICENTE BLVD, LOS ANGELES, CA  |8885551212  |N/A         |            |
-027|E46749      |null        |ELLEN DEGENERES   |JOHN DEGENERES|      F     |WHITE       |PO BOX 7788, BURBANK, CA                 |2706009800  |ENGLISH     |2186-5^NOT HISPANIC OR LATINO^HL70012|
-028|E46700      |null        |TOM CRUISE        |JOHN CRUISE   |      M     |WHITE       |1111 CALLE VISTA DR, BEVERLY HILLS, CA   |2706009800  |ENGLISH     |2186-5^NOT HISPANIC OR LATINO^HL70012|
-029|10006579    |null        |MILLA JOVOVICH    |N/A           |      F     |N/A         |2175 HERCULES DR, LOS ANGELES, CA        |8885551212  |N/A         |            |
-030|10006579    |null        |SYLVESTER STALLONE|N/A           |      M     |N/A         |425 SE 11TH TERRACE, DANIA, FL           |8885551212  |N/A         |            |
-031|10006579    |null        |VAL KILMER        |N/A           |      M     |N/A         |1642 N FAIRFAX AVE, LOS ANGELES, CA      |8885551212  |N/A         |            |
-032|10006579    |null        |DREW BARRYMORE    |N/A           |      F     |N/A         |111 DUCK ST, CULVER CITY, CA             |8885551212  |N/A         |            |
-033|10006579    |null        |ANTHONY HOPKINS   |N/A           |      M     |N/A         |7023 BIRDVIEW AVE, MALIBU, CA            |8885551212  |N/A         |            |
-034|10006579    |null        |RIVER PHOENIX     |N/A           |      M     |N/A         |111, , FOWL                              |8885551212  |N/A         |            |
-035|10006579    |null        |DAN AKROYD        |N/A           |      M     |N/A         |111, , PACIFIC PALISADES                 |8885551212  |N/A         |            |
-036|10006579    |null        |ROCK HUDSON       |N/A           |      M     |N/A         |1011 COVE WAY, BEVERLY HILLS, CA         |8885551212  |N/A         |            |
-037|10006579    |null        |KATE WINSLET      |N/A           |      F     |N/A         |373 PARK AVE, NEW YORK, NY               |8885551212  |N/A         |            |
-038|10006579    |null        |GWYNETH PALTROW   |N/A           |      F     |N/A         |9000 W SUNSET BLVD, WEST HOLLYWOOD, CA   |8885551212  |N/A         |            |
-039|10006579    |null        |ADAM SANDLER      |N/A           |      M     |N/A         |1422 CAPRI AVE, LOS ANGELES, CA          |8885551212  |N/A         |            |
-040|10006579    |null        |FRANK SINATRA     |N/A           |      M     |N/A         |70300 SAN LORENZO RD, PALM DESERT, CA    |8885551212  |N/A         |            |
-041|10006579    |null        |ANGELINA JOLIE    |N/A           |      F     |N/A         |620 N MAPLE DR, BEVERLY HILLS, CA        |8885551212  |N/A         |            |
-042|10006579    |null        |BRUCE WILLIS      |N/A           |      M     |N/A         |1005 BENEDICT CANYON DR, BEVRLY HILLS, CA|8885551212  |N/A         |            |
-043|10006579    |null        |BRAD PITT         |N/A           |      M     |N/A         |315 S KENNEDY AVE, SHAWNEE, OK           |8885551212  |N/A         |            |
+   | Patient ID |    DOB     |       Name       | Alt. Name  |     Sex    |    Race    |   Home Address   |Phone Number|Prim. Lang. |Ethnic Group|
+000|E46749      |1999-01-01        |JOHN DOE          |JOHN DOE        |      M     |WHITE       |115 MAINSTREET, GOODTOWN, KY              |
+001|E46700      |1907-05-26        |JOHN WAYNE        |JOHN WAYNE        |      M     |WHITE       |3160 AIRWAY AVE, COSTA MESA, CA              |
+002|10006579    |1916-04-05        |GREGORY PECK      |N/A        |      M     |N/A         |100 LANCASTER AVE, WYNEWOOD, PA              |
+003|10006579    |1974-04-28        |PENELOPE CRUZ     |N/A        |      F     |N/A         |350 S BEVERLY DR, HOLLYWOOD, CA              |
+004|10006579    |1971-06-05        |MARK WAHLBERG     |N/A        |      M     |N/A         |9601 WILSHIRE BLVD, BEVERLY HILLS, CA              |
+005|PATID1234   |1969-02-11        |JENNIFER ANISTON  |N/A        |      F     |N/A         |411 RANCH PARK PL, ESCONDIDO, CA              |
+006|10006579    |1925-10-23        |JOHNNY CARSON     |N/A        |      M     |N/A         |6962 WILDLIFE RD, MALIBU, CA              |
+007|10006579    |1937-04-22        |JACK NICHOLSON    |N/A        |      M     |N/A         |12850 MULHOLLAND DR, BEVERLY HILLS, CA              |
+008|10006579    |1984-11-22        |SCARLET JOHANSSON |N/A        |      F     |N/A         |1234, , NEW YORK              |
+009|10006579    |1974-01-30        |CHRISTIAN BALE    |N/A        |      M     |N/A         |3456 WILSHIRE BLVD, BEVERLY HILLS, CA              |
+010|E46749      |1930-01-30        |GENE HACKMAN      |JOHN HACKMAN        |      M     |WHITE       |1424 OLD SUNSET TRAIL, SANTA FE, NM              |
+011|E46700      |1907-05-22        |LAWRENCE OLIVIER  |JOHN OLIVIER        |      M     |WHITE       |115 MAINSTREET, GOODTOWN, KY              |
+012|10006579    |1970-10-08        |MATT DAMON        |N/A        |      M     |N/A         |916 W BURBANK BLVD, BURBANK, CA              |
+013|10006579    |1967-07-16        |WILL FERRELL      |N/A        |      M     |N/A         |370 LEXINGTON AVE, NEW YORK, NY              |
+014|10006579    |1964-01-07        |NICHOLAS CAGE     |N/A        |      M     |N/A         |715 SAN VICENTE BLVD, WEST HOLLYWOOD, CA              |
+015|PATID1234   |1966-08-14        |HALLE BERRY       |N/A        |      F     |N/A         |13341 LORRAIN AVE, CLEVELAND, OH              |
+016|10006579    |1970-04-29        |UMA THURMAN       |N/A        |      F     |N/A         |150 5TH AVE, NEW YORK, NY              |
+017|10006579    |1985-12-31        |ERICH BERGEN      |N/A        |      M     |N/A         |655 PENN AVE, PITTSBURGH, PA              |
+018|10006579    |1968-01-02        |CUBA GOODING      |N/A        |      M     |N/A         |2186 CLARK ST, DETROIT, MI              |
+019|10006579    |1955-01-18        |KEVIN COSTNER     |N/A        |      M     |N/A         |999 OCEAN PARK BLVD, SANTA MONICA, CA              |
+020|E46749      |1931-02-08        |JAMES DEAN        |JOHN DEAN        |      M     |WHITE       |115 MAINSTREET, GOODTOWN, KY              |
+021|E46700      |1945-11-21        |GOLDIE HAWN       |JOHN HAWN        |      F     |WHITE       |350 S BEVERLY DR, BEVERLY HILLS, CA              |
+022|10006579    |1931-02-06        |RIP TORN          |N/A        |      M     |N/A         |PO BOX 1392, LAKEVILLE, CT              |
+023|10006579    |1947-02-02        |FARRAH FAWCETT    |N/A        |      F     |N/A         |926 ROSEDALE DR, CORPUS CHRISTI, TX              |
+024|10006579    |1890-10-02        |GROUCHO MARX      |N/A        |      M     |N/A         |376 E 10TH ST, NEW YORK, NY              |
+025|PATID1234   |1964-07-26        |SANDRA BULLOCK    |N/A        |      F     |N/A         |8581 SANTA MONICA BLVD, SANTA MONICA, CA              |
+026|10006579    |1949-06-22        |MERYL STREEP      |N/A        |      F     |N/A         |2000 AVENUE OF THE STARS, LOS ANGELES, CA              |
+027|10006579    |1977-01-13        |ORLANDO BLOOM     |N/A        |      M     |N/A         |9150 WILSHIRE BLVD, BEVERLY HILLS, CA              |
+028|10006579    |1930-03-24        |STEVE MCQUEEN     |N/A        |      M     |N/A         |232 MAIN ST, SLATER, MO              |
+029|10006579    |1937-08-08        |DUSTIN HOFFMAN    |N/A        |      M     |N/A         |11661 SAN VICENTE BLVD, LOS ANGELES, CA              |
+030|E46749      |1958-01-26        |ELLEN DEGENERES   |JOHN DEGENERES        |      F     |WHITE       |PO BOX 7788, BURBANK, CA              |
+031|E46700      |1962-07-03        |TOM CRUISE        |JOHN CRUISE        |      M     |WHITE       |1111 CALLE VISTA DR, BEVERLY HILLS, CA              |
+032|10006579    |1975-12-17        |MILLA JOVOVICH    |N/A        |      F     |N/A         |2175 HERCULES DR, LOS ANGELES, CA              |
+033|10006579    |1946-07-06        |SYLVESTER STALLONE|N/A        |      M     |N/A         |425 SE 11TH TERRACE, DANIA, FL              |
+034|10006579    |1959-12-31        |VAL KILMER        |N/A        |      M     |N/A         |1642 N FAIRFAX AVE, LOS ANGELES, CA              |
+035|PATID1234   |1955-11-13        |WHOOPI GOLDBERG   |N/A        |      F     |N/A         |1650 BROADWAY, NEW YORK, NY              |
+036|10006579    |1975-02-22        |DREW BARRYMORE    |N/A        |      F     |N/A         |111 DUCK ST, CULVER CITY, CA              |
+037|10006579    |1937-12-31        |ANTHONY HOPKINS   |N/A        |      M     |N/A         |7023 BIRDVIEW AVE, MALIBU, CA              |
+038|10006579    |1970-08-23        |RIVER PHOENIX     |N/A        |      M     |N/A         |111, , FOWL              |
+039|10006579    |1952-07-01        |DAN AKROYD        |N/A        |      M     |N/A         |111, , PACIFIC PALISADES              |
+040|PATID1234   |1952-06-07        |LIAM NEESON       |N/A        |      F     |N/A         |PO BOX 298, WASSAIC, NY              |
+041|10006579    |1925-11-17        |ROCK HUDSON       |N/A        |      M     |N/A         |1011 COVE WAY, BEVERLY HILLS, CA              |
+042|10006579    |1975-10-05        |KATE WINSLET      |N/A        |      F     |N/A         |373 PARK AVE, NEW YORK, NY              |
+043|10006579    |1972-09-27        |GWYNETH PALTROW   |N/A        |      F     |N/A         |9000 W SUNSET BLVD, WEST HOLLYWOOD, CA              |
+044|10006579    |1966-09-09        |ADAM SANDLER      |N/A        |      M     |N/A         |1422 CAPRI AVE, LOS ANGELES, CA              |
+045|PATID1234   |1899-05-10        |FRED ASTAIRE      |N/A        |      F     |N/A         |555 LANCASTER AVE, BERWYN, PA              |
+046|10006579    |1915-12-12        |FRANK SINATRA     |N/A        |      M     |N/A         |70300 SAN LORENZO RD, PALM DESERT, CA              |
+047|10006579    |1975-06-04        |ANGELINA JOLIE    |N/A        |      F     |N/A         |620 N MAPLE DR, BEVERLY HILLS, CA              |
+048|10006579    |1955-03-19        |BRUCE WILLIS      |N/A        |      M     |N/A         |1005 BENEDICT CANYON DR, BEVRLY HILLS, CA              |
+049|10006579    |1963-12-18        |BRAD PITT         |N/A        |      M     |N/A         |315 S KENNEDY AVE, SHAWNEE, OK              |

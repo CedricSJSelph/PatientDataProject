@@ -3,6 +3,7 @@ package com.patientData;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
@@ -34,10 +35,10 @@ public class ReadData{
 					newPatient.setName(data[5]);
 
 					//Date of Birth formatting
-					//String doBField = data[7];
-					//String[] nameFieldArray = nameField.split("\\^");
-					//data[7] = nameFieldArray[1] + " " + nameFieldArray[0];
-					//newPatient.setDoB(data[7]);
+					Integer year = Integer.parseInt(data[7].substring(0,4));
+					Integer month = Integer.parseInt(data[7].substring(4,6));
+					Integer day = Integer.parseInt(data[7].substring(6,8));
+					newPatient.setDoB(LocalDate.of(year, month, day));
 
 					// Sex formatting
 					boolean isMale = false;
@@ -100,35 +101,20 @@ public class ReadData{
 					newPatient.setLanguage(data[15]);
 
 					//Ethic Group formatting
-					newPatient.setEthnicGroup(data[22]);
+					if(data.length >= 22){
+						if(data[22].equals("")){
+							data[22] = "N/A";
+						}
+						else{
+							String[] ethnicityStr = data[22].split("\\^");
+							data[22] = ethnicityStr[1];
+						}
+						newPatient.setEthnicGroup(data[22]);
+					}
+					else {
+						newPatient.setEthnicGroup("N/A");
+					}
 
-
-
-
-
-					System.out.println("id: " + newPatient.getId() + "\tName: " + newPatient.getName() + "\tSex: "
-							+ newPatient.getSex() + "\tRace: " + newPatient.getRace() + "\tAlt Name: "
-							+ newPatient.getAltName() + "\tAddress: " + newPatient.getAddress() + "\tPhone Number: "
-							+ newPatient.getPhoneNumber() + "\tLanguage: " + newPatient.getLanguage() + "\tEthnic Group: "
-							+ newPatient.getEthnicGroup());
-					System.out.println();
-
-//					newPatient.setEthnicGroup(data[2]);
-
-
-//					for(int i = 0; i < data.length; i++){
-//						if(i == 0){
-//
-//						}
-//					}
-//					for (int i =0; i < data.length-1; i++){
-//						System.out.println(data[i] + "\t");
-//					}
-//
-//					System.out.println(line);
-//					System.out.println("break");
-//					System.out.println("name index: " + data[5]);
-//					System.out.println("end");
 					Patients.add(newPatient);
 				}
 			}
