@@ -150,9 +150,9 @@ public class Patient {
         }
         str.append("|");
 
-        //Name format
+        //Alt Name format
         str.append(this.getAltName());
-        for(int i = 0; i < (8 -0 /*this.altName.length()*/); i++){
+        for(int i = 0; i < (14 -this.altName.length()); i++){
             str.append(" ");
         }
         str.append("|");
@@ -174,7 +174,28 @@ public class Patient {
 
         //Address format
         str.append(this.getAddress());
-        for(int i = 0; i < (14 - 0/*this.getAddress().length()*/); i++){
+        for(int i = 0; i < (41 - this.getAddress().length()); i++){
+            str.append(" ");
+        }
+        str.append("|");
+
+        //Address format
+        str.append(this.getPhoneNumber());
+        for(int i = 0; i < (12 - this.getPhoneNumber().toString().length()); i++){
+            str.append(" ");
+        }
+        str.append("|");
+
+        //Address format
+        str.append(this.getLanguage());
+        for(int i = 0; i < (12 - this.getLanguage().length()); i++){
+            str.append(" ");
+        }
+        str.append("|");
+
+        //Address format
+        str.append(this.getEthnicGroup());
+        for(int i = 0; i < (12 - this.getEthnicGroup().length()); i++){
             str.append(" ");
         }
         str.append("|");
