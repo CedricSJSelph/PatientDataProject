@@ -117,17 +117,6 @@ public class Patient {
     @Override
     public String toString(){
         StringBuilder str = new StringBuilder();
-//            str
-//                    .append(this.id + "|")
-//                    .append(this.doB + " |")
-//                    .append(this.name + " |")
-//                    .append(this.altName + " |")
-//                    .append(this.sex + " |")
-//                    .append(this.race + " |")
-//                    .append(this.address + " |")
-//                    .append(this.phoneNumber + " |")
-//                    .append(this.language + " |")
-//                    .append(this.ethnicGroup + " |");
 
         //ID format
         str.append(this.getId());
@@ -138,7 +127,7 @@ public class Patient {
 
         //Dob format
         str.append(this.getDoB());
-        for(int i = 0; i < (8 - 0/*this.getDoB().toString().length()*/); i++){
+        for(int i = 0; i < (12 - this.getDoB().toString().length()); i++){
             str.append(" ");
         }
         str.append("|");
@@ -179,23 +168,23 @@ public class Patient {
         }
         str.append("|");
 
-        //Address format
+        //Phone Number format
         str.append(this.getPhoneNumber());
         for(int i = 0; i < (12 - this.getPhoneNumber().toString().length()); i++){
             str.append(" ");
         }
         str.append("|");
 
-        //Address format
+        //Language format
         str.append(this.getLanguage());
         for(int i = 0; i < (12 - this.getLanguage().length()); i++){
             str.append(" ");
         }
         str.append("|");
 
-        //Address format
+        //Ethinic format
         str.append(this.getEthnicGroup());
-        for(int i = 0; i < (12 - this.getEthnicGroup().length()); i++){
+        for(int i = 0; i < (22 - this.getEthnicGroup().length()); i++){
             str.append(" ");
         }
         str.append("|");
